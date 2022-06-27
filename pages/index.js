@@ -13,17 +13,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Natalie Artemis</title>
+        <title>We miss you, Mike</title>
       </Head>
 
-      <Image
-        src="/logo.png"
-        alt="Logo"
-        width={900}
-        height={400}
-        layout={"responsive"}
-        className="py-12 grid place-items-center"
-      />
+      
 
       <PhotoAlbum
         layout="masonry"
@@ -31,8 +24,8 @@ export default function Home() {
         columns={(containerWidth) => {
           if (containerWidth < 376) return 1;
           if (containerWidth < 600) return 2;
-          if (containerWidth < 1200) return 2;
-          return 5;
+          if (containerWidth < 1200) return 3;
+          return 3;
         }}
       />
     </div>
