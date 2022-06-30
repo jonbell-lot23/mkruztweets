@@ -22,7 +22,7 @@ export default function Home() {
         columns={(containerWidth) => {
           if (containerWidth < 676) return 1;
           if (containerWidth < 900) return 2;
-          if (containerWidth < 1300) return 3;
+          if (containerWidth < 1500) return 3;
           if (containerWidth < 1800) return 4;
           return 5;
         }}
@@ -37,7 +37,7 @@ export default function Home() {
 export function Footer() {
   return (
     <div className="w-full flex justify-center">
-      <div className="border-gray-200 border my-8 text-gray-600 text-left w-full sm:w-112 md:w-1/3 xl:w-1/4 bg-white p-4 rounded-lg">
+      <div className="border-gray-200 border my-8 text-gray-600 text-left w-full lg:w-1/3 xl:w-1/3 bg-white p-4 rounded-lg">
         <div className="font-semibold mb-2">About this project</div>
         <p>
           This is a small sampling of the tweets sent when our friend passed.
@@ -46,7 +46,7 @@ export function Footer() {
 
         <p className="mt-4">
         (Thanks to <a href="http://twitter.com/stammy" className="text-blue-500 hover:text-blue-800">@stammy</a> {} 
-         and <a href="http://twitter.com/lessachu" className="text-blue-500 hover:text-blue-800">@lessachu</a> for their help)
+         and <a href="http://twitter.com/lessachu" className="text-blue-500 hover:text-blue-800">@lessachu</a> for your help)
         </p>
                 
         
