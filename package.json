@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "deploy": "next build && next export && rsync -Pahvz --delete out/ uxlaunch@uxlaunchpad.com:/home4/uxlaunch/www/maybeallthatmatters",
     "start": "next start",
     "lint": "next lint"
   },
